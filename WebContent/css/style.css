@@ -1,0 +1,38 @@
+.menu-wrapper ul li{
+	
+	float:left;
+	background-color: blue;
+    width: 200px;
+	line-height:50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	list-style-type: none;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+	
+	
+		
+}
+
+
+.menu-wrapper ul li a{
+	display: block;
+	text-decoration: none;
+    background-color: red;
+	
+}
+.menu-wrapper ul li:hover a{
+    background-color: blue;
+    color: black;
+    
+}
+.menu-wrapper ul li:hover{
+	
+	background-color: red;
+}
+.menu-wrapper ul li:hover a span{
+    color: white;
+}
