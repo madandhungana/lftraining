@@ -2,14 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
 <link rel="stylesheet" type="text/css" href="./css/layout.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/media.css">
+    
 
 <title>Home| TuTangle</title>
 </head>
 <body>
 <!--    -->
+    <div class="media-query">
     <div class="main-wrp">
         
         <!--  Header part goes here  -->
@@ -36,13 +40,13 @@
                         
                            
                     <div class="quick-access-container clrfix">
-                        <div class="username-container"><span>Joe Burros</span>
+                        <div class="username-container"><span class="username">Joe Burros</span>
                                
                         </div>
                         <div class="user-menu clrfix">
                             <ul>
-                                <li><span><a href="#">Home</a></span></li>
-                                <li><a href="#">Setting</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Settings</a></li>
                                 <li><a href="#">Log Out</a></li>
                             </ul>
                             
@@ -56,7 +60,7 @@
             </div>
             <div class="bottom-header ">
                 <div class="nav-container clrfix">
-                    <div class="nav-menu ">
+                    <div class="nav-menu">
                         <ul>
                             <li><a href="new-entry.html">Create New Entry</a></li>
                             <li><a href="topic-box.html">My Topic Boxes</a></li>
@@ -65,7 +69,7 @@
                         </ul>
                                                 
                     </div>
-                    <div class="notification-container clrfix">
+                    <div class="notification-container ">
                         <div class="invite-container">
                             <a href="invites.html">Topic Boxes Invites - <span>2</span></a>
                         </div>
@@ -91,8 +95,8 @@
                                 </div>
                                 <div class="content-container">
                                     <ul>
-                                        <li><a>Nick Cave and the Bad Seeds</a><span><img src="images/download.png"></a></span></li>
-                                    <li>African Animals<span><a><img src="images/download.png"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a>Nick Cave and the Bad Seeds</a></span><span class="image-container"><a href="index.html"><img src="images/download.png" alt="Download"></a></span></li>
+                                    <li class="clrfix"><span class="text-content-container"><a>African Animals</a></span><span class="image-container"><a href="index.html"><img src="images/download.png" alt="Download"></a></span></li>
                                     
                                     
                                     
@@ -104,8 +108,13 @@
                                 </div>
                                 <div class="content-container">
                                     <ul>
-                                        <li>asdfghjkl</li>
-                                    
+                                        <li class="clrfix"><span class="text-content-container"><a>Different Versions of the Tristan Und Isolde Prelude</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increase"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a>Music</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increase"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a href="index.html"> Guitar</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increse"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a href="index.html">Bob Cohen</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increase"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a href="index.html">Mark Schnack</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increase"></a></span></li>
+                                        <li class="clrfix"><span class="text-content-container"><a href="index.html">Jefferson Dickey</a></span><span class="image-container"><a href="index.html"><img src="images/drag.png" alt="increase"></a></span></li>
+                                        
                                     
                                     
                                     </ul>
@@ -113,6 +122,10 @@
                             </div>
 
                         </div>
+                        
+                        
+                        
+<!--                     Main Container goes here   -->
                         <div class="main-container">
                             <div class="heading-container">
                                 Entries
@@ -148,7 +161,7 @@
                             
                             <div class="contents">
                                 <ul>
-                                    <li class="clrfix"><span class="user-image "><img src="images/alan.png"></span>  
+                                    <li class="clrfix"><span class="user-image "><img src="images/alan.png" alt="Alen Coe"></span>
                                         <p>
                                             <span class="all-member-title">Day for Night by Francois Truffaut,a ground breaking film</span>
                                         </p>
@@ -160,53 +173,66 @@
                                         </p>
                                     
                                     </li>
-                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/mary.png"></span>
+                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/mary.png" alt="Mary Pilot"></span>
                                         <p>
-                                            <span class="all-member-title">Day for Night by Francois Truffaut,a ground breaking film</span>
+                                        <span class="new-entry">NEW ENTRY!</span>
+                                        
                                         </p>
                                         <p>
-                                            <span class="username">by <a href="#">Alen Coe</a></span>
-                                            <span class="date">February 10, 2012 </span><span class="subscribe"> Subscribed</span>
+                                            <span class="all-member-title">Blade Runner, The Director's Cut</span>
                                         </p>
-                                        <p> <span class="topic-box">From Topic Box:<a> My Favorite Movies</a></span>
+                                        <p>
+                                            <span class="username">by <a href="#">Mary Pilot</a></span>
+                                            <span class="date">February 8, 2012 </span>
+                                        </p>
+                                        <p> <span class="topic-box">From Topic Box:<a> Behind the Schene</a></span>
                                         </p>
                                     
                                     </li>
-                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/jim.png"></span>
+                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/jim.png" alt="Jim Roy"></span>
                                     <p>
-                                            <span class="all-member-title">Day for Night by Francois Truffaut,a ground breaking film</span>
+                                        <span class="new-comment">NEW COMMENT!</span>
+                                        
                                         </p>
                                         <p>
-                                            <span class="username">by <a href="#">Alen Coe</a></span>
-                                            <span class="date">February 10, 2012 </span><span class="subscribe"> Subscribed</span>
+                                            <span class="all-member-title">The Best French Resturant in Chicago?</span>
                                         </p>
-                                        <p> <span class="topic-box">From Topic Box:<a> My Favorite Movies</a></span>
+                                        <p>
+                                            <span class="username">by <a href="#">Jim Roy</a></span>
+                                            <span class="date">February 7, 2012 </span>
+                                        </p>
+                                        <p> <span class="topic-box">From Topic Box:<a> Chicago Resturants Reviews</a></span>
                                         </p>
                                     </li>
-                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/john.png"></span><p>
-                                            <span class="all-member-title">Day for Night by Francois Truffaut,a ground breaking film</span>
+                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/john.png" alt="John-Peter Moise"></span><p>
+                                            <span class="all-member-title">The Meaning of Night, Dark Book but incredibly well written</span>
                                         </p>
                                         <p>
-                                            <span class="username">by <a href="#">Alen Coe</a></span>
-                                            <span class="date">February 10, 2012 </span><span class="subscribe"> Subscribed</span>
+                                            <span class="username">by <a href="#">John-Peter Moise</a></span>
+                                            <span class="date">February 7, 2012 </span><span class="subscribe"> Subscribed</span>
                                         </p>
-                                        <p> <span class="topic-box">From Topic Box:<a> My Favorite Movies</a></span>
-                                        </p>
-                                    
-                                    </li>
-                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/marinne.png"></span><p>
-                                            <span class="all-member-title">Day for Night by Francois Truffaut,a ground breaking film</span>
-                                        </p>
-                                        <p>
-                                            <span class="username">by <a href="#">Alen Coe</a></span>
-                                            <span class="date">February 10, 2012 </span><span class="subscribe"> Subscribed</span>
-                                        </p>
-                                        <p> <span class="topic-box">From Topic Box:<a> My Favorite Movies</a></span>
+                                        <p> <span class="topic-box">From Topic Box:<a> Books Read &amp; Books to Read</a></span>
                                         </p>
                                     
                                     </li>
+                                    <li class="clrfix"><span class="user-image clrfix"><img src="images/marinne.png" alt="Marinne Gib"></span>
+                                        <p>
+                                        <span class="topic-box-invite">TOPIC BOX INVITE!</span>
+                                        
+                                        </p>
+                                        <p>
+                                            <span class="all-member-title">Pea Pesto</span>
+                                        </p>
+                                        <p>
+                                            <span class="username">by <a href="#">Marinne Gib</a></span>
+                                            <span class="date">February 6, 2012 </span>
+                                        </p>
+                                        <p> <span class="topic-box">From Topic Box:<a> Favorite Recipes</a></span>
+                                        </p>
+                                    </li>
                                     
                                     
+
                                 </ul>
                                 
                                 
@@ -227,6 +253,7 @@
                                         <li>Searching the Site</li>
                                         <li>Previous &amp; Saved Searches</li>
                                         <li>The Topic Box Page</li>
+                                        <li>Creating a Topic Box</li>
                                         <li>View Topic Box Entries</li>
                                         <li>Creating an Entry</li>
                                         <li>Privacy Setting</li>
@@ -247,11 +274,11 @@
             <div class="footer-container">
                 <div class="footer-left-container">
                     <ul>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contactus">Contact Us</a></li>
-                        <li><a href="termsofuse.html">Terms of Use</a></li>
-                        <li><a href="privacy.html">Privacy Policy</li>
-                        <li><a href="feedback.html">Feedback</li>
+                        <li><a href="aboutus.html">About Us</a></li><li><img src="images/dot.png" alt=" "></li>
+                        <li><a href="contactus">Contact Us</a></li><li><img src="images/dot.png" alt=" "></li>
+                        <li><a href="termsofuse.html">Terms of Use</a></li><li><img src="images/dot.png" alt=" "></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li><li><img src="images/dot.png" alt=" "></li>
+                        <li><a href="feedback.html">Feedback</a></li>
                     </ul>
                 </div>
                 <div class="footer-right-container">&copy; TuTangle 2013
@@ -263,6 +290,6 @@
         </div>
     
     </div>
-
+    </div>
 </body>
 </html>

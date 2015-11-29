@@ -4,6 +4,7 @@
 
 .text-container{
     background: url(../images/search-input.png);
+   
     
 }
 .text-container input{
@@ -12,14 +13,18 @@
     background: none;
     background-color: transparent;
     width: 100%;
+    font-size: 10px;
+    padding-left: 8px;
     
 }
 
 
-.username-container span{
-    font-size: 14px;
-    color: #333134;
-    line-height: 30px;
+.username-container .username{
+    font-size: 16px;
+    color: #353132;
+    font-weight: 100;
+    
+    
     
 }
 .user-menu ul{
@@ -29,7 +34,6 @@
 }
 .user-menu ul li{
     float: left;
-    line-height: 10px;
     padding: 0px 5px;
     border-left: 1px solid;
      
@@ -37,11 +41,15 @@
 .user-menu ul li:first-child{
     border-left: 0px;
 }
+.user-menu ul li:last-child{
+    padding-right: 0px;
+}
 .user-menu ul li a{
     display: block;
     text-decoration: none;
     font-size: 11px;
-    color: #333134;
+    color: #353132;
+    font-weight: bold;
     
     
 }
@@ -60,7 +68,7 @@
     display: block;
     text-decoration: none;
     color:#3c3c3c;
-    font-size: 13px;
+    font-size: 14px;
      
     
 }
@@ -71,27 +79,30 @@
 .notification-container a{
     display: block;
     text-decoration: none;
-    color:#3c3c3c;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .invite-container{
-    background: url(../images/invite-active-state.png) 0% 50% no-repeat ;
-    padding-left: 18px;
+    background: url(../images/invite-active-state.png) 0 45% no-repeat ;
+    
     
 }
 .invite-container a{
     line-height: 40px;
     display: block;
+    padding-left:18px;
+    color: #696969;
     
 }
 
 .frn-request-container{
     background: url(../images/friend-request.png)0 50%no-repeat;
     padding-left: 25px;
+    
 }
 .frn-request-container a{
     line-height: 40px;
+    color:#aaaaaa;
 }
 
 .title-container{
@@ -106,30 +117,58 @@ list-style: none;
 .content-container ul li{
     
     background:#f5f5f5;
+    padding:10px 14px 6px 10px;
+    font-size: 11px;
     line-height: 16px;
-    padding:14px 14px 14px 12px;
-    font-size: 12px;
     color: #292929;
+    position: relative;
     
 }
 .content-container ul li:hover {
     background: #fff;
     
+    
 }
-.content-container ul li a{
+.text-content-container a{
     display: block;
-    width: 46.39175257731959%;
+    width:61.14649681528662%;
+    text-decoration: none;
+    color: #292929;
+    
+  }
+.text-content-container{
+    float: left;
+    width:92.35294117647059%;
+    
 }
-.content-container ul li span{
-float: right;
+.image-container{
+    float: right;
+    right: 14px;
+    bottom: 8px;
+    z-index: 1;
+    
 }
+
 .content-container ul li a image{
     float: right;
 }
 
+
+.recent-search2 .text-content-container a{ 
+width:87.26114649681529%;
+}
+
+.recent-search2 .image-container{
+    float: right;
+    right: 14px;
+    top: 50%;
+    z-index: 1;
+    
+}
+
 /*Main Container*/
 .heading-container{
-    font-size: 30px;
+    font-size: 29px;
  
 }
 .main-menu-container{
@@ -208,7 +247,7 @@ border-bottom: 2px solid #2fc1da;
     padding-bottom:7px;
 }
 .username,.date,.subscribe{
-    font-size: 10px;
+    font-size: 11px;
     
 }
 .username a{
@@ -223,6 +262,8 @@ border-bottom: 2px solid #2fc1da;
 .subscribe{
     border-left:1px solid #898989;
     padding: 0px 6px;
+    font-weight: bold;
+    color: #6f971d;
     
 }
 .topic-box{
@@ -234,12 +275,26 @@ border-bottom: 2px solid #2fc1da;
     color: #50afc1;
     font-weight: bold;
 }
+.new-entry,.topic-box-invite,.new-comment {
+    font-size: 10px;
+    font-weight: bold;
+    color: #2f9eb1;
+}
+.new-entry a,.new-comment a,.topic-box-invite a{
+    
+    text-decoration: none;
+    
+    
+}
+.topic-box-invite{
+    color: #d33e1d;
+     font-weight: bold;
+}
 /*Right Side Container */
 .r-title-container{
     color: #fff;
     background: #2fc1da;
     font-size: 16px;
-    padding-left: 12px;
 }
 
 .r-content-container ul{
@@ -248,9 +303,9 @@ border-bottom: 2px solid #2fc1da;
 }
 .r-content-container ul li{
     background:#f5f5f5;
-    line-height: 34px;
+    line-height: 33px;
     padding-left: 12px;
-    font-size: 12px;
+    font-size: 11px;
     color: #292929;
 
     
@@ -262,6 +317,32 @@ border-bottom: 2px solid #2fc1da;
     display: block;
    
 }
+
+.footer-left-container{
+    font-size: 9px;
+   
+}
+.footer-left-container ul{
+    list-style: none;
+}
+.footer-left-container ul li{
+    float: left;
+    
+        
+}
+.footer-left-container ul li a{
+    text-decoration: none;
+    display: block;
+    color: #d4d4d4;
+    padding-right: 7px;
+}
+.footer-left-container ul li img{
+    padding-top: 2px;
+   padding-right: 7px; 
+}
+
+
 .footer-right-container{
     font-size: 9px;
+    color: #d4d4d4;
 }

@@ -22,14 +22,13 @@
 }
 .form-container{
     float: left;
-    padding:40px 0px 24px 26px;
+    padding:40px 0px 25px 26px;
     
 }
 
 .text-container{
     float: left;
-    padding: 0px 4px;
-    width:268px;
+    width:276px;
     height:20px;
     
 }
@@ -48,11 +47,11 @@
 }
 .username-container{
     float: right;    
-    padding: 8px 0px 10px 0px;
+    padding: 8px 0px 8px 0px;
 }
 .user-menu{
     
-    padding: 0px 0px 7px 0px;
+    padding-bottom: 6px;
 }
 .bottom-header{
     background: #f5f5f5;
@@ -63,12 +62,12 @@
     margin: 0 auto;
 }
 .nav-menu{
-    flaot:left;
-    width: 64.60554371002132%;
+    float:left;
+    width: 68.0170575692963%;
 }
 .notification-container{
     float: right;
-    width:35.39445628997868%;
+    width:31.98294243070362%;
 }
 .invite-container{
     float:left;
@@ -87,11 +86,15 @@
     background: #fff;
 }
 .body-wrapper{
-    padding:30px 0px 32px 0px; 
+    padding:30px 0px 32px 0px;
+    
+   
 }
 .body-wrp{
     max-width:58.625em;
+    background: url(../images/background.png) repeat-y;
     margin: 0 auto;
+    
     
 }
 
@@ -104,13 +107,14 @@
 .left-container{
     width: 26.28726287262873%;
     float:left;
+    
 }
 .recent-search1{
     width: 100%;
 }
 .title-container{
     width: 93.81443298969072%;
-    padding: 16px 0px 14px 12px;
+    padding: 15px 0px 12px 12px;
     
 }
 .content-container{
@@ -118,18 +122,18 @@
     background:#f5f5f5;
 }
 
-.content-container span{
-    float: right;
-/*    padding-left: 5px;*/
-}
 
-.download{
-    width: 12px;float: right;
+.image-container{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    float: right;
 }
 .recent-search2{
     
     width: 100%;
-    background: orange;
+    background:#f5f5f5;
+    padding-top: 8px;
     
 }
 .main-container{
@@ -137,7 +141,7 @@
     float: right;
 }
 .heading-container{
-    padding: 0px 0px 12px 2px;
+    padding: 0px 0px 6px 2px;
     width: 99.61389961389961%;
 }
 .main-menu-container{
@@ -185,11 +189,10 @@
 }
 
 
-.right-menu-container{
-    
-}
+
 
 /*right container goes here*/
+
 .right-container{
     width: 18.76332622601279%;
     font-size: 30px;
@@ -197,7 +200,7 @@
 }
 .r-title-container{
     width: 93.18181818181818%;
-    padding: 16px 0px 14px 12px
+    padding: 16px 0px 13px 12px
     
 }
 .r-content container{
@@ -213,18 +216,9 @@
 }
 .footer-left-container{
     float: left;
+    padding-top: 20px;
 }
-.footer-left-container ul{
-    list-style: none;
-}
-.footer-left-container ul li{
-    float: left;
-    
-    
-}
-.footer-left-container ul li a{
-    text-decoration: none;
-}
+
 .footer-right-container{
     float: right;
     padding: 19px 6px 15px 0px;
